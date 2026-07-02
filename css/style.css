@@ -1,0 +1,106 @@
+/* ====== GLOBAL STYLES ====== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+ 
+
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ====== FORM CONTAINER ====== */
+.form-container {
+  background-color: #1e1e1e; /* Form box */
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* ====== HEADING & SUBTITLE ====== */
+h1 {
+  font-size: 32px;
+  margin: 0;
+  color: #00e676
+}
+
+.subtitle {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #aaa;
+}
+
+/* ====== INPUT FIELDS ====== */
+input {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2a2a2a;
+  color: white;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+/* ====== SUBMIT BUTTON ====== */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #00e676; /* Green button */
+  color: #121212;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00c66c; /* Darker green on hover */
+}
+
+/* ====== LOGIN LINK BELOW FORM ====== */
+.login-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #00e676;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+.form-container {
+  box-shadow: 0 0 20px rgba(0, 230, 118, 0.2);
+}
+body {
+  background: #121212 url('https://www.transparenttextures.com/patterns/black-linen.png');
+}
+.error-message {
+  color: #ff5252;
+  background-color: #2a2a2a;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+.success-message {
+  color: #00e676;
+  background-color: #2a2a2a;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  text-align: center;
+}
