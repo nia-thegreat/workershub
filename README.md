@@ -46,7 +46,7 @@ A full-stack service management web application built with PHP and MySQL that co
 
 ## 📂 Project Structure
 
-      ```text
+```text
 workershub/
 │
 ├── admin_dashboard.php
