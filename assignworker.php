@@ -180,7 +180,7 @@ $workersResult = $availableWorkersStmt->get_result();
             <td><?= $row['user_id'] ?></td>
             <td><?= htmlspecialchars($serviceName) ?></td>
             <td><?= htmlspecialchars($row['location']) ?></td>
-            <td><?= htmlspecialchars($row['details']) ?></td>
+            <td><?= htmlspecialchars($row['description']) ?></td>
             <td><?= $row['preferred_date'] ?></td>
             <td><?= $row['worker_name'] ?? 'Not Assigned' ?></td>
             <td><?= $row['status'] ?></td>
@@ -200,17 +200,23 @@ $workersResult = $availableWorkersStmt->get_result();
                     Assigned
                 <?php endif; ?>
             </td>
-            <td>
-                <form method="POST">
-                    <input type="hidden" name="enquiry_id" value="<?= $row['id'] ?>">
-                    <select name="status">
-                        <option value="Pending" <?= $row['status'] === 'Pending' ? 'selected' : '' ?>>Pending</option>
-                        <option value="In Progress" <?= $row['status'] === 'In Progress' ? 'selected' : '' ?>>In Progress</option>
-                        <option value="Completed" <?= $row['status'] === 'Completed' ? 'selected' : '' ?>>Completed</option>
-                    </select>
-                    <button type="submit" name="update_status">Update</button>
-                </form>
-            </td>
+             <td>
+    <?php if ($row['status'] === 'Completed'): ?>
+        Completed
+    <?php else: ?>
+        <form method="POST">
+            <input type="hidden" name="enquiry_id" value="<?= $row['id'] ?>">
+
+            <select name="status">
+                <option value="Pending" <?= $row['status'] === 'Pending' ? 'selected' : '' ?>>Pending</option>
+                <option value="In Progress" <?= $row['status'] === 'In Progress' ? 'selected' : '' ?>>In Progress</option>
+                <option value="Completed">Completed</option>
+            </select>
+
+            <button type="submit" name="update_status">Update</button>
+        </form>
+    <?php endif; ?>
+</td>
         </tr>
     <?php endwhile; ?>
     </tbody>

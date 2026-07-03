@@ -170,7 +170,7 @@ $result = $conn->query("SELECT * FROM workers");
       <input type="text" name="username" placeholder="Username" required>
       <input type="text" name="password" placeholder="Password" required>
       <button type="submit" name="add_worker">Add Worker</button>
-      <button type="submit" name="welcome"> welcome</button>
+  
     </form>
   </div>
 

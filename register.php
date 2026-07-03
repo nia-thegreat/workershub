@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['register'])) {
 
     $name = trim($_POST['name']);
     $email = trim($_POST['email']);
-    $password = $_POST['password'];
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
     $sql = "INSERT INTO users (name, email, password) VALUES (?, ?, ?)";
     $stmt = $conn->prepare($sql);

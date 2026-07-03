@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['pay_now'])) {
     $conn->query("UPDATE payments SET status='Paid' WHERE id=$payment_id AND user_id=$user_id");
 }
 
-$sql = "SELECT p.*, e.details AS enquiry_desc
+$sql = "SELECT p.*, e.description AS enquiry_desc
         FROM payments p
         JOIN enquiries e ON p.enquiry_id = e.id
         WHERE p.user_id = ?

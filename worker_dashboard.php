@@ -103,7 +103,7 @@ $tasks = $conn->query($sql);
                     <td><?= $row['user_id'] ?></td>
                     <td><?= htmlspecialchars($row['service_name']) ?></td>
                     <td><?= htmlspecialchars($row['location']) ?></td>
-                    <td><?= htmlspecialchars($row['details']) ?></td>
+                    <td><?= htmlspecialchars($row['description']) ?></td>
                     <td><?= $row['preferred_date'] ?></td>
                     <td><?= $row['status'] ?></td>
                     <td>

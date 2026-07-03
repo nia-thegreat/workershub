@@ -1,12 +1,14 @@
 <?php
-$host = "localhost";
+$host = "hayabusa.proxy.rlwy.net";
 $user = "root";
-$password = "";
-$database = "workershub_db";
+$password = "pNroptClxDLVNQKbqPXjuEZkcaIdFhVN";
+$database = "railway";
+$port = 29683;
 
-$conn = new mysqli($host, $user, $password, $database);
+$conn = new mysqli($host, $user, $password, $database, $port);
 
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    die("Connection failed (" . $conn->connect_errno . "): " . $conn->connect_error);
 }
 ?>
+
