@@ -42,7 +42,7 @@ http://workershub.freedev.app/
 | Database | MySQL |
 | Frontend | HTML, CSS, JavaScript |
 | Database Client | TablePlus |
-| Cloud Database | Railway |
+| Hosting | InfinityFree |
 | Version Control | Git |
 | Repository Hosting | GitHub |
 
