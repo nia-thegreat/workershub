@@ -2,6 +2,10 @@
 
 A full-stack service management web application built with PHP and MySQL that connects **Users**, **Administrators**, and **Workers** on a single platform. Users can submit service requests, administrators assign workers, workers manage their tasks, and users can track enquiries and payments.
 
+## 🌐 Live Demo
+
+http://workershub.freedev.app/
+
 ---
 
 ## ✨ Features
