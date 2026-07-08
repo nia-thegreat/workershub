@@ -1,8 +1,14 @@
 <?php
-$host = "sql310.infinityfree.com";
-$user = "if0_42346957";
-$password = "IBS9YhxZERznV";
-$database = "if0_42346957_workershub";
+
+$host = "YOUR_DB_HOST";
+$user = "YOUR_DB_USER";
+$password = "YOUR_DB_PASSWORD";
+$database = "YOUR_DB_NAME";
+
+$host = "YOUR_DB_HOST";
+$user = "YOUR_DB_USER";
+$password = "YOUR_DB_PASSWORD";
+$database = "YOUR_DB_NAME";
 
 $conn = new mysqli($host, $user, $password, $database );
 
